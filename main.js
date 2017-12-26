@@ -13,6 +13,7 @@ Vue.component('message', {
     `
 });
 
+
 Vue.component('product-list', {
     template: '<div class="b--black bg-light-gray mv3 w-100 w-50-m w-25-l mw5 pa1 center tc"><product v-for="product in products">{{product.product}}</product></div>',
 
@@ -30,7 +31,26 @@ Vue.component('product-list', {
 });
 
 
+Vue.component('items', {
+    template: `<div class ="b--black bg-washed-green mv3 w-100 w-50-m w-25-l mw5 pa1 center"><item v-for="item in items">{{item.item}} {{item.qty}}</item></div>`,
+
+    data() {
+        return {
+            items: [
+                { item: 'Mitchel', qty: 10 },
+                { item: 'Penn', qty: 5 },
+                { item: 'Abu', qty: 8 }
+            ]
+        };
+    }
+});
+
+
 Vue.component('product', {
+    template: '<li><slot></slot></li>'
+});
+
+Vue.component('item', {
     template: '<li><slot></slot></li>'
 });
 

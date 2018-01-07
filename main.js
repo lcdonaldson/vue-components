@@ -5,7 +5,6 @@ Vue.component('message', {
     template: `
         <article class = "center mw5 mw6-ns hidden ba mt4">
             <h1 class = "f4 bg-near-black white mv0 pv2 ph3"> {{ title }} </h1>
-
             <div class = "pa3 bt">
                 <p class = "f6 f5-ns lh-copy measure mv0"> {{ body }} </p> 
             </div> 
@@ -32,7 +31,7 @@ Vue.component('product-list', {
 
 
 Vue.component('items', {
-    template: `<div class ="b--black bg-washed-green mv3 w-100 w-50-m w-25-l mw5 pa1 center"><item v-for="item in items">{{item.item}} {{item.qty}}</item></div>`,
+    template: `<div class ="b--black bg-washed-green mv3 w-100 w-50-m w-25-l mw5 pa1 center"><item v-for="item in items">{{item.item}} {{item.qty}} <button @click="deleteFind(index)"> X </button></item></div>`,
 
     data() {
         return {
@@ -42,7 +41,17 @@ Vue.component('items', {
                 { item: 'Abu', qty: 8 }
             ]
         };
+    },
+    
+    methods: {
+  
+      deleteFind: function (index) {
+        console.log(index);
+        console.log(this.items);
+        this.items.splice(index, 1);
+      }
     }
+    
 });
 
 
@@ -55,7 +64,7 @@ Vue.component('item', {
 });
 
 new Vue({
-    el: '#root'
+  el: '#root',
 });
 
 Vue.config.devtools = true;

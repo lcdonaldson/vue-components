@@ -31,7 +31,7 @@ Vue.component('product-list', {
 
 
 Vue.component('items', {
-    template: `<div class ="b--black bg-washed-green mv3 w-100 w-50-m w-25-l mw5 pa1 center"><item v-for="item in items">{{item.item}} {{item.qty}} <button @click="deleteFind(index)"> X </button></item></div>`,
+    template: `<div class ="b--black bg-washed-green mv3 w-100 w-50-m w-25-l mw5 pa1 center"><item v-for="item in items">{{item.item}} {{item.qty}} <button @click="deleteFind(index)"> x </button></item></div>`,
 
     data() {
         return {
@@ -63,8 +63,17 @@ Vue.component('item', {
     template: '<li><slot></slot></li>'
 });
 
+Vue.component('goto', {
+    template: '<a v-bind:href="link">Google</a>',
+    data() {
+      return {
+        link: 'http://www.google.com'
+      };
+    }
+});
+
 new Vue({
-  el: '#root',
+  el: '#root'
 });
 
 Vue.config.devtools = true;

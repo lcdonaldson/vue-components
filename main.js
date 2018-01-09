@@ -64,10 +64,10 @@ Vue.component('item', {
 });
 
 Vue.component('goto', {
-    template: '<a v-bind:href="link">Google</a>',
+    template: '<a v-bind:href="link">Shark Rigs</a>',
     data() {
       return {
-        link: 'http://www.google.com'
+        link: 'https://www.tacklecrafters.com/shop/blacktiph-shark-rig/'
       };
     }
 });

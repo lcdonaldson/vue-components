@@ -14,7 +14,9 @@ Vue.component('message', {
 
 
 Vue.component('product-list', {
-    template: '<div class="b--black bg-light-gray mv3 w-100 w-50-m w-25-l mw5 pa1 center tc"><product v-for="product in products">{{product.product}}</product></div>',
+    template: '<div class="b--black bg-light-gray mv3 w-100 w-50-m w-25-l mw5 pa1 center tc">
+                   <product v-for="product in products">{{product.product}}</product>
+               </div>',
 
     data() {
         return {
@@ -31,7 +33,11 @@ Vue.component('product-list', {
 
 
 Vue.component('items', {
-    template: `<div class ="b--black bg-washed-green mv3 w-100 w-50-m w-25-l mw5 pa1 center"><item v-for="item in items">{{item.item}} {{item.qty}} <button @click="deleteFind(index)"> x </button></item></div>`,
+    template: `<div class="b--black bg-washed-green mv3 w-100 w-50-m w-25-l mw5 pa1 center">
+                   <item v-for="item in items">{{item.item}} {{item.qty}} 
+                       <button @click="deleteFind(index)"> x </button>
+                   </item>
+               </div>`,
 
     data() {
         return {

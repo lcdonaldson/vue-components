@@ -44,7 +44,8 @@ Vue.component('items', {
             items: [
                 { item: 'Mitchel', qty: 10 },
                 { item: 'Penn', qty: 5 },
-                { item: 'Abu', qty: 8 }
+                { item: 'Abu', qty: 8 },
+                { item: 'Shimmano', qty: 4 }
             ]
         };
     },

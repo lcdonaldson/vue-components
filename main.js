@@ -14,9 +14,9 @@ Vue.component('message', {
 
 
 Vue.component('product-list', {
-    template: '<div class="b--black bg-light-gray mv3 w-100 w-50-m w-25-l mw5 pa1 center tc">
+    template: `<div class="b--black bg-light-gray mv3 w-100 w-50-m w-25-l mw5 pa1 center tc">
                    <product v-for="product in products">{{product.product}}</product>
-               </div>',
+               </div>`,
 
     data() {
         return {
@@ -63,15 +63,15 @@ Vue.component('items', {
 
 
 Vue.component('product', {
-    template: '<li><slot></slot></li>'
+    template: `<li><slot></slot></li>`
 });
 
 Vue.component('item', {
-    template: '<li><slot></slot></li>'
+    template: `<li><slot></slot></li>`
 });
 
 Vue.component('goto', {
-    template: '<a v-bind:href="link">Shark Rigs</a>',
+    template: `<a v-bind:href="link">Shark Rigs</a>`,
     data() {
       return {
         link: 'https://www.tacklecrafters.com/shop/blacktiph-shark-rig/'

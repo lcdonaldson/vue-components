@@ -127,4 +127,15 @@ See below -->
 	}
 </style>
 
-<!-- The component above needs to be implemented in another file represented below. -->
+<!-- The component above needs to be implemented in another file represented below.
+
+<template>
+	
+	<button type="button" class="tl-corner sm-btn blk-btn" @click="showModal">Add Bill</button>
+	<modal
+		v-show="isModalVisible"
+		@close="closeModal"
+	/>
+</template
+
+-->

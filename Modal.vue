@@ -138,4 +138,31 @@ See below -->
 	/>
 </template
 
+<script>
+import axios from 'axios';
+import modal from './Modal.vue';
+
+export default {
+	components: {
+        modal,
+    },
+	data() {
+		return {
+			bills: [],
+			isModalVisible: false,
+		};
+	},
+	methods: {
+		showModal() {
+			this.isModalVisible = true;
+		},
+
+		closeModal() {
+			this.isModalVisible = false;
+		},
+
+	},
+};
+</script>
+
 -->

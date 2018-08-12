@@ -32,7 +32,15 @@ See below -->
 					id="modalDescription"
 				>
 					<slot name="body">
-						I'm the default body!
+						<form @submit.prevent="handleSubmit">
+						
+							<div class="form-field"> 
+								<label class="form-label"> Name: </label>
+								<input class="form-input" type="text" v-model="bills.name"/>
+							</div>
+
+							<button class="btn-green" type="submit">Submit</button>
+						</form>
 					</slot>
 				</section>
 				<footer class="modal-footer">
@@ -124,6 +132,27 @@ See below -->
 		background: #4AAE9B;
 		border: 1px solid #4AAE9B;
 		border-radius: 2px;
+	}
+	.form-field {
+		display: block;
+		width: 100%;
+		padding: 0.5rem 0;
+	}
+
+	form > div :last-child { margin-bottom: 0.5rem;}
+
+	.form-label {
+		width: 100%;
+		display: block;
+		text-align: left;
+		padding: 0.2rem 0;
+	}
+	.form-input {
+		min-width: 15rem;
+		border: 3px solid #efefef;
+		padding-left: 0.5rem;
+		outline: none;
+		background-color: transparent;
 	}
 </style>
 

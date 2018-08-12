@@ -1,7 +1,7 @@
 <template>
   <div>
-		<h1>{{msg}}</h1>
-    <button class="btn p-btn">{{ $route.params.name }}</button>
+  	<h1>{{msg}}</h1>
+  	<button class="btn p-btn">{{ $route.params.name }}</button>
   </div>
 </template>
 

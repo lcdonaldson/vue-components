@@ -147,6 +147,52 @@ See below -->
 		text-align: left;
 		padding: 0.2rem 0;
 	}
+
+	.form-ckbx { 
+		margin-left: 0.8rem;
+    		margin-top: 0.4rem;
+	}
+
+	input[type="checkbox"] {
+		-webkit-appearance: none;
+		outline: none;
+		width: 40px;
+		height: 16px;
+		border: 1px solid #aaa;
+		border-radius: 2px;
+		background: #ebebeb;
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		vertical-align: middle;
+		transition: background 0.1s;
+		box-sizing: border-box;
+	}
+
+	input[type="checkbox"]:after {
+		content: "";
+		position: absolute;
+		top: -1px;
+		left: -1px;
+		width: 14px;
+		height: 14px;
+		background: white;
+		border: 1px solid #aaa;
+		border-radius: 2px;
+		transition: left 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	}
+
+	input[type="checkbox"]:checked {
+		background: #49ae9b;
+    		border-color: #3aab95;
+	}
+
+	input[type="checkbox"]:hover:not(:checked):not(:disabled):after,
+	input[type="checkbox"]:focus:not(:checked):not(:disabled):after { left: 0px; }
+
+	input[type="checkbox"]:hover:checked:not(:disabled):after,
+	input[type="checkbox"]:focus:checked:not(:disabled):after { left: 22px; }
+
 	.form-input {
 		min-width: 15rem;
 		border: 3px solid #efefef;
@@ -154,6 +200,8 @@ See below -->
 		outline: none;
 		background-color: transparent;
 	}
+
+	.center { text-align: center; }
 </style>
 
 <!-- The component above needs to be implemented in another file represented below.

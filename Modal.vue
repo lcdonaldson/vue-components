@@ -114,13 +114,13 @@ See below -->
 
 	.modal-body {
 		position: relative;
-		padding: 20px 10px;
+		padding: 1.5rem 0.5rem;
 	}
 
 	.btn-close {
 		border: none;
-		font-size: 20px;
-		padding: 20px;
+		font-size: 16pt;
+		padding: 1.5rem;
 		cursor: pointer;
 		font-weight: bold;
 		color: #4AAE9B;
@@ -188,7 +188,7 @@ See below -->
 	}
 
 	input[type="checkbox"]:hover:not(:checked):not(:disabled):after,
-	input[type="checkbox"]:focus:not(:checked):not(:disabled):after { left: 0px; }
+	input[type="checkbox"]:focus:not(:checked):not(:disabled):after { left: 0; }
 
 	input[type="checkbox"]:hover:checked:not(:disabled):after,
 	input[type="checkbox"]:focus:checked:not(:disabled):after { left: 22px; }

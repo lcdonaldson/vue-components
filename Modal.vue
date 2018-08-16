@@ -156,8 +156,8 @@ See below -->
 	input[type="checkbox"] {
 		-webkit-appearance: none;
 		outline: none;
-		width: 40px;
-		height: 16px;
+		width: 3rem;
+		height: 1rem;
 		border: 1px solid #aaa;
 		border-radius: 2px;
 		background: #ebebeb;

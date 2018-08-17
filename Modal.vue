@@ -89,7 +89,7 @@ See below -->
 
 	.modal {
 		background: #FFFFFF;
-		box-shadow: 2px 2px 20px 1px;
+		box-shadow: 0.2rem 0.2rem 2rem 0.1rem;
 		overflow-x: auto;
 		display: flex;
 		flex-direction: column;

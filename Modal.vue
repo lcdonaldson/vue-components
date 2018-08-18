@@ -97,7 +97,7 @@ See below -->
 
 	.modal-header,
 	.modal-footer {
-		padding: 15px;
+		padding: 1rem;
 		display: flex;
 	}
 

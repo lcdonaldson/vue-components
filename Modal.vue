@@ -131,7 +131,7 @@ See below -->
 		color: white;
 		background: #4AAE9B;
 		border: 1px solid #4AAE9B;
-		border-radius: 2px;
+		border-radius: 0.2rem;
 	}
 	.form-field {
 		display: block;

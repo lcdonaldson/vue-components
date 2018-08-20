@@ -159,7 +159,7 @@ See below -->
 		width: 3rem;
 		height: 1rem;
 		border: 1px solid #aaa;
-		border-radius: 2px;
+		border-radius: 0.2rem;
 		background: #ebebeb;
 		position: relative;
 		display: inline-block;

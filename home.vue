@@ -41,7 +41,7 @@
   },
   .btn {
     padding: 0.3rem 2rem; 
-    border-radius: 5px;
+    border-radius: 0.5rem;
     outline: none;
     font-size: 1em;
   },

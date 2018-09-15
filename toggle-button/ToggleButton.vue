@@ -8,14 +8,16 @@
 </template>
 
 <script>
-	var app = new Vue({
+	export default {
 	  el: '#app',
-	  data: { 
-		message: 'Logged In',
-		nmessage: 'Logged Out', 
-		isOpen: false 
+	  data () {
+	  	return { 
+			message: 'Logged In',
+			nmessage: 'Logged Out', 
+			isOpen: false 
+	    }
 	  }
-	});
+	};
 </script>
 
 <style>

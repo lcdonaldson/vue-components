@@ -9,14 +9,14 @@
 
 <script>
 	export default {
-	  el: '#app',
-	  data () {
-	  	return { 
-			message: 'Logged In',
-			nmessage: 'Logged Out', 
-			isOpen: false 
-	    }
-	  }
+		el: '#app',
+		data () {
+			return { 
+				message: 'Logged In',
+				nmessage: 'Logged Out', 
+				isOpen: false 
+			}
+		}
 	};
 </script>
 

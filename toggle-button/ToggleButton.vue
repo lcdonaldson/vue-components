@@ -43,7 +43,7 @@
 		background: linear-gradient(lightseagreen, skyblue);
 		color: gainsboro;
 		font-weight: 600;
-		border-radius: 1.5em; 
+		border-radius: 1.5rem; 
 	} 
 
 	p { text-align: center; }

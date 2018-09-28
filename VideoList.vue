@@ -1,6 +1,7 @@
 <template>
     <ul>
         <VideoListItem
+            class="videoListItem"
             v-for="video in videos"
             :video="video"
             :key="video"
@@ -23,6 +24,5 @@ export default {
 </script>
 
 <style>
-ul > * { text-decoration: none; }
-
+.videoListItem { text-decoration: none; }
 </style>

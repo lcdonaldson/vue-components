@@ -22,5 +22,7 @@ export default {
 }
 </script>
 
-<script>
-</script>
+<style>
+ul > * { text-decoration: none; }
+
+</style>

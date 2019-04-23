@@ -1,6 +1,6 @@
 <template>
 	<body>
-		<div id="app" class="heroWrapper hwSkin" v-on:click="isOpen = !isOpen">
+		<div id="app" class="heroWrapper heroWrapperSkin" v-on:click="isOpen = !isOpen">
 		    <p v-show="isOpen">{{nmessage}}</p>
 		    <p v-show="!isOpen">{{message}}</p> 
 		</div> 
@@ -28,7 +28,7 @@
 
 	body {
 		padding: 0.2rem; 
-		background: radial-gradient(lightblue, #0a77d5);  
+		background: radial-gradient(lightblue, #0A77D5);  
 		font-family: "helvetica";
 	}
 
@@ -39,7 +39,7 @@
 		font-size: 1.5em; 
 	}
 
-	.hwSkin {
+	.heroWrapperSkin {
 		background: linear-gradient(lightseagreen, skyblue);
 		color: gainsboro;
 		font-weight: 600;

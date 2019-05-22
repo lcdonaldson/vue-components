@@ -102,13 +102,13 @@ See below -->
 	}
 
 	.modal-header {
-		border-bottom: 1px solid #eeeeee;
+		border-bottom: 1px solid #EEEEEE;
 		color: #4AAE9B;
 		justify-content: space-between;
 	}
 
 	.modal-footer {
-		border-top: 1px solid #eeeeee;
+		border-top: 1px solid #EEEEEE;
 		justify-content: flex-end;
 	}
 
@@ -158,7 +158,7 @@ See below -->
 		outline: none;
 		width: 3rem;
 		height: 1rem;
-		border: 1px solid #aaa;
+		border: 1px solid #AAAAAA;
 		border-radius: 0.2rem;
 		background: #ebebeb;
 		position: relative;
@@ -177,7 +177,7 @@ See below -->
 		width: 14px;
 		height: 14px;
 		background: white;
-		border: 1px solid #aaa;
+		border: 1px solid #AAAAAA;
 		border-radius: 2px;
 		transition: left 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 	}
@@ -195,7 +195,7 @@ See below -->
 
 	.form-input {
 		min-width: 15rem;
-		border: 3px solid #efefef;
+		border: 3px solid #EFEFEF;
 		padding-left: 0.5rem;
 		outline: none;
 		background-color: transparent;

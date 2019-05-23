@@ -46,9 +46,9 @@
     font-size: 1em;
   },
   .p-btn {
-    border: 0.2rem solid teal;
+    border: 0.2rem solid #008080;
     background-color: transparent;
-    color: teal;
+    color: #008080;
     font-weight: 600;
   }
 </style>

@@ -7,7 +7,6 @@
 
 <script>
 	import axios from 'axios';
-
 	export default {
 		name: 'Home',
 		data() {
@@ -47,7 +46,6 @@
   },
   .p-btn {
     border: 0.2rem solid #008080;
-    background-color: transparent;
     color: #008080;
     font-weight: 600;
   }
